@@ -1,0 +1,18 @@
+#sidebar a.active {
+    color: #23BE0A;
+    background: transparent;
+    border: 1px solid #23BE0A;
+    border-radius: 8px;
+    font-weight: 600;
+    
+  }
+
+#sidebar {
+    background: transparent;
+    font-size: 16px;
+    color: #131313CC;
+}
+#sidebar li{
+    margin: 0px 3px;
+     /* border: 2px solid red; */
+}
