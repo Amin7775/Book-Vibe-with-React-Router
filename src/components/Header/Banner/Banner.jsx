@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Banner = () => {
     return ( 
@@ -6,9 +7,11 @@ const Banner = () => {
                 <h1 className="text-2xl lg:text-6xl font-bold leading-tight text-center lg:text-start">Books to freshen up your bookshelf</h1>
 
                <div className="flex justify-center items-center lg:items-start lg:justify-start pb-3 lg:pb-0">
+                <Link to={'/listedBooks'}>
                <button className="btn bg-[#23BE0A] text-lg lg:text-xl font-semibold px-5 lg:px-6  py-3 lg:py-4 rounded-lg h-full text-white my-5 lg:mt-10">
                     View The List
                 </button>
+                </Link>
                </div>
             </div>
             <div className="flex-1 px-6 lg:p-12">

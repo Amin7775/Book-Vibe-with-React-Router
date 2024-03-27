@@ -19,7 +19,7 @@ const Book = ({singleBook}) => {
     }= singleBook;
     return (
         <>
-        <Link>
+        <Link to={`/BookDetails/${bookId}`}>
         <div className="border border-[#13131326] rounded-2xl p-7">
             <div className="h-72 bg-[#F3F3F3] p-6 rounded-2xl">
                 <img className="h-full mx-auto" src={image} alt="" />
