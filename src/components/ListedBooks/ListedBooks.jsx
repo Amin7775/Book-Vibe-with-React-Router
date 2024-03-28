@@ -51,7 +51,7 @@ const ListedBooks = () => {
   return (
     <div>
       {/* heading */}
-      <div className="bg-[#1313130D] lg:rounded-2xl my-8">
+      <div className="bg-[#1313130D] lg:rounded-2xl my-6 lg:my-8">
         <h1 className="font-bold text-3xl text-center p-10 ">Books</h1>
       </div>
       {/* sort */}

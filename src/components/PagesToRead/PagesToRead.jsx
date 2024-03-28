@@ -8,7 +8,7 @@ const PagesToRead = () => {
 
     return (
       <div>
-        <div className="bg-[#1313130D] lg:rounded-2xl my-10">
+        <div className="bg-[#1313130D] lg:rounded-2xl my-6 lg:my-10">
           <h1 className="font-bold text-3xl text-center p-10 ">
             Pages To Read
           </h1>
