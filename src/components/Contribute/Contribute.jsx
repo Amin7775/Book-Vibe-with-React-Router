@@ -1,8 +1,9 @@
+import AddBook from "./AddBook/AddBook";
 
 const Contribute = () => {
     return (
-        <div>
-            This is contribute
+        <div className="my-8">
+            <AddBook></AddBook>
         </div>
     );
 };
