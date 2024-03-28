@@ -1,5 +1,6 @@
 # Project Title - Book Vibe
-## Project Link : [https://66059c78f825fb2f9cbf2a9b--creative-paletas-041042.netlify.app/] ##
+## Project Link : [https://creative-paletas-041042.netlify.app] 
+##
 
 This is a react based project where users can see the reviews of books,keep them of wishlist and keep the lists of books they have read. Users can also contribute to the website by adding books so that others can know about the book too. 
 
