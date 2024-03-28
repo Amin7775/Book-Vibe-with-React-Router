@@ -14,7 +14,7 @@
     },
     {
       "bookId": 2,
-      "bookName": "The Tears Immortal of Beloved Apphat",
+      "bookName": "The Tears of Beloved Apphat",
       "author": "Alain Louis Camus",
       "image": "https://i.ibb.co/PQxzstG/The-Tears-Immortal-Of-Beloved-Apphat.jpg",
       "review": "Embark on a mesmerizing journey through the mystical realms of fantasy as you follow the epic tale of Beloved Apphat and her immortal tears. Alain Louis Camus weaves a captivating narrative filled with enchantment, adventure, and profound emotions.",
@@ -35,7 +35,7 @@
       "rating": 4.5,
       "category": "Mystery",
       "tags": ["Suspense", "Thriller"],
-      "publisher": "RO",
+      "publisher": "Ro Publication",
       "yearOfPublishing": 2021
     },
     {
@@ -61,7 +61,7 @@
       "rating": 4.3,
       "category": "Science Fiction",
       "tags": ["Space", "Adventure"],
-      "publisher": "Publisher Name",
+      "publisher": "Random House",
       "yearOfPublishing": 2018
     },
     {
@@ -74,7 +74,7 @@
       "rating": 4.4,
       "category": "Romance",
       "tags": ["Love", "Relationships"],
-      "publisher": "Publisher Name",
+      "publisher": "Sheba",
       "yearOfPublishing": 2022
     },
     {
@@ -87,7 +87,7 @@
       "rating": 4.7,
       "category": "Historical Fiction",
       "tags": ["Family", "Drama"],
-      "publisher": "Publisher Name",
+      "publisher": "Bridgerton",
       "yearOfPublishing": 2017
     },
     {
@@ -100,7 +100,7 @@
         "rating": 4.8,
         "category": "Thriller",
         "tags": ["Suspense", "Mystery"],
-        "publisher": "Publisher Name",
+        "publisher": "Great Publishers",
         "yearOfPublishing": 2019
       },
       {
@@ -113,7 +113,7 @@
         "rating": 4.5,
         "category": "Mystery",
         "tags": ["Suspense", "Thriller"],
-        "publisher": "Publisher Name",
+        "publisher": "Floring Publication",
         "yearOfPublishing": 2021
       },
       {
@@ -126,7 +126,7 @@
         "rating": 4.3,
         "category": "Mystery",
         "tags": ["Murder Mystery", "Crime"],
-        "publisher": "Publisher Name",
+        "publisher": "Random House",
         "yearOfPublishing": 2018
       },
       {
@@ -139,7 +139,7 @@
         "rating": 4.2,
         "category": "Adventure",
         "tags": ["Underwater", "Exploration"],
-        "publisher": "Publisher Name",
+        "publisher": "Kakao Studio",
         "yearOfPublishing": 2020
       },
       {
