@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Tags from "../Book/Tags";
+import { getReadData, getWishlistData, setReadData, setWishlistData } from "../../utilities/LocalStorage/localStorage";
 
 const BookDetails = () => {
     const fetchedBooks = useLoaderData()
@@ -21,6 +22,16 @@ const BookDetails = () => {
         yearOfPublishing
         
     }= singleBook;
+
+    const handleRead = () => {
+        setReadData(singleBook)
+        console.log(getReadData())
+    }
+
+    const handleWishlist = () =>{
+        setWishlistData(singleBook)
+        console.log(getWishlistData())
+    }
 
     return (
         <div className="flex my-11 gap-16">
@@ -61,10 +72,10 @@ const BookDetails = () => {
             </div>
             {/* btn */}
             <div className="flex gap-4 mt-7">
-                <button className="btn bg-transparent border border-[#1313134D] text-lg font-semibold px-6 py-2 h-full">
+                <button onClick={handleRead} className="btn bg-transparent border border-[#1313134D] text-lg font-semibold px-6 py-2 h-full">
                     Read
                 </button>
-                <button className="btn bg-[#50B1C9] hover:bg-[#50B1C9]/[.90] text-lg font-semibold text-white px-6 py-2 h-full">
+                <button onClick={handleWishlist} className="btn bg-[#50B1C9] hover:bg-[#50B1C9]/[.90] text-lg font-semibold text-white px-6 py-2 h-full">
                     Wishlist
                 </button>
             </div>

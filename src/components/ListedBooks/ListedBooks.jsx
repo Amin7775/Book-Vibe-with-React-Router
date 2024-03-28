@@ -1,9 +1,14 @@
 import { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { getReadData, getWishlistData } from "../../utilities/LocalStorage/localStorage";
 
 const ListedBooks = () => {
   const [selectedOption, setSelectedOption] = useState("");
+  const readData = getReadData()
+  console.log("read data", readData)
+  const wishlistData = getWishlistData()
+  console.log('wishlist', wishlistData)
 
   const handleChange = (event) => {
     event.preventDefault();
