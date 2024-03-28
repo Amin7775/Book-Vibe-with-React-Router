@@ -2,11 +2,13 @@ import { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { getReadData, getWishlistData } from "../../utilities/LocalStorage/localStorage";
+import ShowBook from "./ShowBook/ShowBook";
 
 const ListedBooks = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const readData = getReadData()
-  console.log("read data", readData)
+  const [showReadData,setShowReadData]=useState(readData)
+  console.log("read data", showReadData)
   const wishlistData = getWishlistData()
   console.log('wishlist', wishlistData)
 
@@ -49,10 +51,15 @@ const ListedBooks = () => {
       <Tab>Read Books</Tab>
       <Tab>Wishlist Books</Tab>
     </TabList>
-
+{/* read */}
     <TabPanel>
-      <h2>Any content 1</h2>
+      <div className="flex flex-col gap-6 my-8">
+        {
+            showReadData.map(book => <ShowBook key={book.bookId} book={book}></ShowBook>)
+        }
+      </div>
     </TabPanel>
+    {/* wishlist */}
     <TabPanel>
       <h2>Any content 2</h2>
     </TabPanel>

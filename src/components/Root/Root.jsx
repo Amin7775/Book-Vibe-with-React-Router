@@ -1,5 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Root = () => {
     return (
@@ -8,6 +10,7 @@ const Root = () => {
             <Header></Header>
             <Outlet></Outlet>
             </div>
+            <ToastContainer />
         </div>
     );
 };
