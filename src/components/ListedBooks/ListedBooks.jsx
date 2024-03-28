@@ -7,9 +7,10 @@ import ShowBook from "./ShowBook/ShowBook";
 const ListedBooks = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const readData = getReadData()
-  const [showReadData,setShowReadData]=useState(readData)
-  console.log("read data", showReadData)
   const wishlistData = getWishlistData()
+  const [showReadData,setShowReadData]=useState(readData)
+  const [showWishListData,setWishListData] = useState(wishlistData)
+  console.log("read data", showReadData)
   console.log('wishlist', wishlistData)
 
   const handleChange = (event) => {
@@ -20,11 +21,11 @@ const ListedBooks = () => {
   return (
     <div>
       {/* heading */}
-      <div className="bg-[#1313130D] rounded-2xl my-8">
+      <div className="bg-[#1313130D] lg:rounded-2xl my-8">
         <h1 className="font-bold text-3xl text-center p-10 ">Books</h1>
       </div>
       {/* sort */}
-      <div className="flex items-center justify-center text-white">
+      <div className="flex items-center justify-center text-white px-1 mb-5">
         <select
           className="select select-bordered w-full max-w-56 bg-[#23BE0A] text-white text-lg font-medium "
           value={selectedOption}
@@ -47,13 +48,13 @@ const ListedBooks = () => {
       {/* container */}
       {/* react tab */}
       <Tabs>
-    <TabList>
+    <TabList className="px-1">
       <Tab>Read Books</Tab>
       <Tab>Wishlist Books</Tab>
     </TabList>
 {/* read */}
     <TabPanel>
-      <div className="flex flex-col gap-6 my-8">
+      <div className="flex flex-col gap-6 my-8 p-5 lg:p-0">
         {
             showReadData.map(book => <ShowBook key={book.bookId} book={book}></ShowBook>)
         }
@@ -61,7 +62,11 @@ const ListedBooks = () => {
     </TabPanel>
     {/* wishlist */}
     <TabPanel>
-      <h2>Any content 2</h2>
+    <div className="flex flex-col gap-6 my-8 p-5 lg:p-0">
+        {
+            showWishListData.map(book => <ShowBook key={book.bookId} book={book}></ShowBook>)
+        }
+      </div>
     </TabPanel>
   </Tabs>
     </div>
