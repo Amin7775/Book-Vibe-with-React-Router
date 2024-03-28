@@ -14,6 +14,7 @@ import ListedBooks from './components/ListedBooks/ListedBooks.jsx';
 import PagesToRead from './components/PagesToRead/PagesToRead.jsx';
 import Contribute from './components/Contribute/Contribute.jsx';
 import Community from './components/Community/Community.jsx';
+import BookDetails from './components/BookDetails/BookDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
         path: "/community", 
         element : <Community></Community>
       },
+      {
+        path: "/bookDetails/:bookID",
+        loader: ()=> fetch('./books.json'),
+        element:<BookDetails></BookDetails>
+      }
     ]
   },
 ]);

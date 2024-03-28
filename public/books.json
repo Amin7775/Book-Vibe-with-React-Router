@@ -9,7 +9,7 @@
       "rating": 4.1,
       "category": "Fantasy",
       "tags": ["Magic", "Adventure"],
-      "publisher": "Publisher Name",
+      "publisher": "Bandwagon Press",
       "yearOfPublishing": 2020
     },
     {
@@ -35,7 +35,7 @@
       "rating": 4.5,
       "category": "Mystery",
       "tags": ["Suspense", "Thriller"],
-      "publisher": "Publisher Name",
+      "publisher": "RO",
       "yearOfPublishing": 2021
     },
     {
@@ -48,7 +48,7 @@
       "rating": 4.2,
       "category": "Fiction",
       "tags": ["Adventure", "Fantasy"],
-      "publisher": "Publisher Name",
+      "publisher": "Kindle",
       "yearOfPublishing": 2020
     },
     {
