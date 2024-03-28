@@ -4,7 +4,7 @@ import { SiPowerpages } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 const ShowBook = ({ book }) => {
-  console.log(book);
+  // console.log(book);
 
   const {
     bookId,
@@ -44,7 +44,7 @@ const ShowBook = ({ book }) => {
           </div>
           <div className="flex gap-2 items-center text-[#13131399]">
             <SiPowerpages />
-            <p>Publisher : {publisher}</p>
+            <p>Pages : {totalPages}</p>
           </div>
         </div>
         {/* line */}
